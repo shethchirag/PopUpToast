@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toast</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-conter">
+        <h1>Toast</h1>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <select name="" id="horizontal-position">
+          <option value="left">Left</option>
+          <option value="right">Right</option>
+        </select>
+        <select name="" id="verticall-position">
+          <option value="top">Top</option>
+          <option value="bottom">Bottom</option>
+        </select>
+        <select name="" id="toast-type">
+          <option value="success">success</option>
+          <option value="error">error</option>
+          <option value="warning">warning</option>
+          <option value="info">info</option>
+        </select>
+        <input
+          class="toast-message"
+          type="text"
+          value="This is a toast message"
+        />
+
+        <div class="range-input">
+          <label for="duration">Duration</label>
+          <input
+            class="duration"
+            type="range"
+            name=""
+            id="duration"
+            min="1"
+            max="10"
+            value="5"
+          />
+        </div>
+
+        <button class="show-toast">Show Toast</button>
+      </div>
+      <div class="toast-container">
+        <!-- <div class="toast">✅ This is a toast message <span>❌</span></div>
+        <div class="toast">✅ This is a toast message <span>❌</span></div>
+        <div class="toast">✅ This is a toast message <span>❌</span></div> -->
+      </div>
+    </main>
+  </body>
+</html>
